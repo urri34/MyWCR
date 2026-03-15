@@ -1,0 +1,11 @@
+[Unit]
+Description=MyWCR My Webcam RTSP
+After=multi-user.target
+
+[Service]
+WorkingDirectory=/home/urri/MyWCR
+ExecStart=/usr/bin/python3 MyWCR.py
+Type=simple
+
+[Install]
+WantedBy=multi-user.target
